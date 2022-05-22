@@ -5,8 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sakklepesek_ErdélyiPéter"
         mc:Ignorable="d"
-        Title="Sakklépések - Erdélyi Péter" Height="450" Width="800">
+        Title="Sakklépések - Erdélyi Péter" Height="600" Width="800">
     <Grid>
-        
+        <Button Canvas.Left="24" Canvas.Top="52" Margin="10,10,675,519">
+            <TextBlock x:Name="feherKiraly" FontFamily="pack://application:,,,/Y_Yoga;Component/Resources/#FontAwesome" Width="76">Fehér király &#x2654;</TextBlock>
+        </Button>
+        <Button Canvas.Left="24" Canvas.Top="52" Margin="122,10,555,519">
+            <TextBlock x:Name="feherKiralyno" FontFamily="pack://application:,,,/Y_Yoga;Component/Resources/#FontAwesome" Width="91" Height="15">Fehér királynő &#x2655;</TextBlock>
+        </Button>
+        <Button Canvas.Left="24" Canvas.Top="52" Margin="242,10,445,519">
+            <TextBlock x:Name="feherBastya" FontFamily="pack://application:,,,/Y_Yoga;Component/Resources/#FontAwesome" Width="81">Fehér bástya &#x2656;</TextBlock>
+        </Button>
+        <Button Canvas.Left="24" Canvas.Top="52" Margin="352,10,343,519">
+            <TextBlock x:Name="feherFuto" FontFamily="pack://application:,,,/Y_Yoga;Component/Resources/#FontAwesome" Width="69">Fehér futó &#x2657;</TextBlock>
+        </Button>
+        <Button Canvas.Left="24" Canvas.Top="52" Margin="454,10,247,519">
+            <TextBlock x:Name="feherLo" FontFamily="pack://application:,,,/Y_Yoga;Component/Resources/#FontAwesome" Width="59">Fehér ló &#x2658;</TextBlock>
+        </Button>
+        <Button Canvas.Left="24" Canvas.Top="52" Margin="550,10,134,519">
+            <TextBlock x:Name="feherGyalog" FontFamily="pack://application:,,,/Y_Yoga;Component/Resources/#FontAwesome" Width="81">Fehér gyalog &#x2659;</TextBlock>
+        </Button>
+        <Button Canvas.Left="24" Canvas.Top="52" Margin="663,10,10,519">
+            <TextBlock x:Name="feketeGyalog" FontFamily="pack://application:,,,/Y_Yoga;Component/Resources/#FontAwesome" Width="90">Fekete gyalog &#x265F;</TextBlock>
+        </Button>
     </Grid>
 </Window>
