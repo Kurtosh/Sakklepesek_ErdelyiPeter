@@ -28,6 +28,38 @@
         <Button Canvas.Left="24" Canvas.Top="52" Margin="663,10,10,519">
             <TextBlock x:Name="feketeGyalog" FontFamily="pack://application:,,,/Y_Yoga;Component/Resources/#FontAwesome" Width="90">Fekete gyalog &#x265F;</TextBlock>
         </Button>
-        <Canvas x:Name="hatter" HorizontalAlignment="Left" Height="358" Margin="91,107,0,0" VerticalAlignment="Top" Width="396"/>
+        <Canvas x:Name="hatter" HorizontalAlignment="Left" Height="400" Margin="91,107,0,0" VerticalAlignment="Top" Width="396"/>
+        <Label Content="1" HorizontalAlignment="Left" Margin="70,466,0,0" VerticalAlignment="Top"/>
+        <Label Content="2" HorizontalAlignment="Left" Margin="70,416,0,0" VerticalAlignment="Top"/>
+        <Label Content="3" HorizontalAlignment="Left" Margin="70,368,0,0" VerticalAlignment="Top"/>
+        <Label Content="4" HorizontalAlignment="Left" Margin="70,318,0,0" VerticalAlignment="Top"/>
+        <Label Content="5" HorizontalAlignment="Left" Margin="70,268,0,0" VerticalAlignment="Top"/>
+        <Label Content="6" HorizontalAlignment="Left" Margin="70,218,0,0" VerticalAlignment="Top"/>
+        <Label Content="7" HorizontalAlignment="Left" Margin="70,168,0,0" VerticalAlignment="Top"/>
+        <Label Content="8" HorizontalAlignment="Left" Margin="70,118,0,0" VerticalAlignment="Top"/>
+        <Label Content="1" HorizontalAlignment="Left" Margin="492,466,0,0" VerticalAlignment="Top"/>
+        <Label Content="2" HorizontalAlignment="Left" Margin="492,416,0,0" VerticalAlignment="Top"/>
+        <Label Content="3" HorizontalAlignment="Left" Margin="492,368,0,0" VerticalAlignment="Top"/>
+        <Label Content="4" HorizontalAlignment="Left" Margin="492,318,0,0" VerticalAlignment="Top"/>
+        <Label Content="5" HorizontalAlignment="Left" Margin="492,268,0,0" VerticalAlignment="Top"/>
+        <Label Content="6" HorizontalAlignment="Left" Margin="492,218,0,0" VerticalAlignment="Top"/>
+        <Label Content="7" HorizontalAlignment="Left" Margin="492,168,0,0" VerticalAlignment="Top"/>
+        <Label Content="8" HorizontalAlignment="Left" Margin="492,118,0,0" VerticalAlignment="Top"/>
+        <Label Content="A" HorizontalAlignment="Left" Margin="108,512,0,0" VerticalAlignment="Top"/>
+        <Label Content="B" HorizontalAlignment="Left" Margin="158,512,0,0" VerticalAlignment="Top"/>
+        <Label Content="C" HorizontalAlignment="Left" Margin="208,512,0,0" VerticalAlignment="Top"/>
+        <Label Content="D" HorizontalAlignment="Left" Margin="258,512,0,0" VerticalAlignment="Top"/>
+        <Label Content="E" HorizontalAlignment="Left" Margin="308,512,0,0" VerticalAlignment="Top"/>
+        <Label Content="F" HorizontalAlignment="Left" Margin="358,512,0,0" VerticalAlignment="Top"/>
+        <Label Content="G" HorizontalAlignment="Left" Margin="408,512,0,0" VerticalAlignment="Top"/>
+        <Label Content="H" HorizontalAlignment="Left" Margin="458,512,0,0" VerticalAlignment="Top"/>
+        <Label Content="A" HorizontalAlignment="Left" Margin="108,81,0,0" VerticalAlignment="Top"/>
+        <Label Content="B" HorizontalAlignment="Left" Margin="158,81,0,0" VerticalAlignment="Top"/>
+        <Label Content="C" HorizontalAlignment="Left" Margin="208,81,0,0" VerticalAlignment="Top"/>
+        <Label Content="D" HorizontalAlignment="Left" Margin="258,81,0,0" VerticalAlignment="Top"/>
+        <Label Content="E" HorizontalAlignment="Left" Margin="308,81,0,0" VerticalAlignment="Top"/>
+        <Label Content="F" HorizontalAlignment="Left" Margin="358,81,0,0" VerticalAlignment="Top"/>
+        <Label Content="G" HorizontalAlignment="Left" Margin="408,81,0,0" VerticalAlignment="Top"/>
+        <Label Content="H" HorizontalAlignment="Left" Margin="458,81,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
