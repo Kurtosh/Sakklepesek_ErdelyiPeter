@@ -28,5 +28,6 @@
         <Button Canvas.Left="24" Canvas.Top="52" Margin="663,10,10,519">
             <TextBlock x:Name="feketeGyalog" FontFamily="pack://application:,,,/Y_Yoga;Component/Resources/#FontAwesome" Width="90">Fekete gyalog &#x265F;</TextBlock>
         </Button>
+        <Canvas x:Name="hatter" HorizontalAlignment="Left" Height="358" Margin="91,107,0,0" VerticalAlignment="Top" Width="396"/>
     </Grid>
 </Window>
