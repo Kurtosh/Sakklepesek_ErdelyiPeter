@@ -55,5 +55,40 @@ namespace Sakklepesek_ErdélyiPéter
                 }
             }
         }
+
+        private void feherGyalogBT_Click(object sender, RoutedEventArgs e)
+        {
+            figura.Source = new BitmapImage(new Uri("D:/GitHubP4/Sakklepesek_ErdélyiPéter/fehergyalog.png"));
+        }
+
+        private void feherKiralyBT_Click(object sender, RoutedEventArgs e)
+        {
+            figura.Source = new BitmapImage(new Uri("D:/GitHubP4/Sakklepesek_ErdélyiPéter/feherkiraly.png"));
+        }
+
+        private void feherKiralynoBT_Click(object sender, RoutedEventArgs e)
+        {
+            figura.Source = new BitmapImage(new Uri("D:/GitHubP4/Sakklepesek_ErdélyiPéter/feherkiralyno.png"));
+        }
+
+        private void feherBastyaBT_Click(object sender, RoutedEventArgs e)
+        {
+            figura.Source = new BitmapImage(new Uri("D:/GitHubP4/Sakklepesek_ErdélyiPéter/feherbastya.png"));
+        }
+
+        private void feherFutoBT_Click(object sender, RoutedEventArgs e)
+        {
+            figura.Source = new BitmapImage(new Uri("D:/GitHubP4/Sakklepesek_ErdélyiPéter/feherfuto.png"));
+        }
+
+        private void feherLoBT_Click(object sender, RoutedEventArgs e)
+        {
+            figura.Source = new BitmapImage(new Uri("D:/GitHubP4/Sakklepesek_ErdélyiPéter/feherlo.png"));
+        }
+
+        private void feketeGyalogBT_Click(object sender, RoutedEventArgs e)
+        {
+            figura.Source = new BitmapImage(new Uri("D:/GitHubP4/Sakklepesek_ErdélyiPéter/feketegyalog.png"));
+        }
     }
 }

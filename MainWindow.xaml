@@ -7,25 +7,25 @@
         mc:Ignorable="d"
         Title="Sakklépések - Erdélyi Péter" Height="600" Width="800">
     <Grid>
-        <Button Canvas.Left="24" Canvas.Top="52" Margin="10,10,675,519">
+        <Button x:Name="feherKiralyBT" Canvas.Left="24" Canvas.Top="52" Margin="10,10,675,519" Click="feherKiralyBT_Click">
             <TextBlock x:Name="feherKiraly" FontFamily="pack://application:,,,/Y_Yoga;Component/Resources/#FontAwesome" Width="76">Fehér király &#x2654;</TextBlock>
         </Button>
-        <Button Canvas.Left="24" Canvas.Top="52" Margin="122,10,555,519">
+        <Button x:Name="feherKiralynoBT" Canvas.Left="24" Canvas.Top="52" Margin="122,10,555,519" Click="feherKiralynoBT_Click">
             <TextBlock x:Name="feherKiralyno" FontFamily="pack://application:,,,/Y_Yoga;Component/Resources/#FontAwesome" Width="91" Height="15">Fehér királynő &#x2655;</TextBlock>
         </Button>
-        <Button Canvas.Left="24" Canvas.Top="52" Margin="242,10,445,519">
+        <Button x:Name="feherBastyaBT" Canvas.Left="24" Canvas.Top="52" Margin="242,10,445,519" Click="feherBastyaBT_Click">
             <TextBlock x:Name="feherBastya" FontFamily="pack://application:,,,/Y_Yoga;Component/Resources/#FontAwesome" Width="81">Fehér bástya &#x2656;</TextBlock>
         </Button>
-        <Button Canvas.Left="24" Canvas.Top="52" Margin="352,10,343,519">
+        <Button x:Name="feherFutoBT" Canvas.Left="24" Canvas.Top="52" Margin="352,10,343,519" Click="feherFutoBT_Click">
             <TextBlock x:Name="feherFuto" FontFamily="pack://application:,,,/Y_Yoga;Component/Resources/#FontAwesome" Width="69">Fehér futó &#x2657;</TextBlock>
         </Button>
-        <Button Canvas.Left="24" Canvas.Top="52" Margin="454,10,247,519">
+        <Button x:Name="feherLoBT" Canvas.Left="24" Canvas.Top="52" Margin="454,10,247,519" Click="feherLoBT_Click">
             <TextBlock x:Name="feherLo" FontFamily="pack://application:,,,/Y_Yoga;Component/Resources/#FontAwesome" Width="59">Fehér ló &#x2658;</TextBlock>
         </Button>
-        <Button Canvas.Left="24" Canvas.Top="52" Margin="550,10,134,519">
+        <Button x:Name="feherGyalogBT" Canvas.Left="24" Canvas.Top="52" Margin="550,10,134,519" Click="feherGyalogBT_Click">
             <TextBlock x:Name="feherGyalog" FontFamily="pack://application:,,,/Y_Yoga;Component/Resources/#FontAwesome" Width="81">Fehér gyalog &#x2659;</TextBlock>
         </Button>
-        <Button Canvas.Left="24" Canvas.Top="52" Margin="663,10,10,519">
+        <Button x:Name="feketeGyalogBT" Canvas.Left="24" Canvas.Top="52" Margin="663,10,10,519" Click="feketeGyalogBT_Click">
             <TextBlock x:Name="feketeGyalog" FontFamily="pack://application:,,,/Y_Yoga;Component/Resources/#FontAwesome" Width="90">Fekete gyalog &#x265F;</TextBlock>
         </Button>
         <Canvas x:Name="hatter" HorizontalAlignment="Left" Height="400" Margin="91,107,0,0" VerticalAlignment="Top" Width="396"/>
@@ -65,5 +65,6 @@
         <TextBox x:Name="pozTB" HorizontalAlignment="Left" Height="41" Margin="550,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="47" IsEnabled="False"/>
         <Label Content="Lehetséges lépések helye:" HorizontalAlignment="Left" Margin="611,91,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="lepesekSzamaTB" HorizontalAlignment="Left" Height="41" Margin="611,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" IsEnabled="False"/>
+        <Image x:Name="figura" HorizontalAlignment="Left" Height="30" Margin="611,344,0,0" VerticalAlignment="Top" Width="30"/>
     </Grid>
 </Window>
