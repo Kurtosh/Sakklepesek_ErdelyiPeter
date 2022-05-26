@@ -62,10 +62,10 @@
         <Label Content="G" HorizontalAlignment="Left" Margin="408,81,0,0" VerticalAlignment="Top"/>
         <Label Content="H" HorizontalAlignment="Left" Margin="458,81,0,0" VerticalAlignment="Top"/>
         <Label Content="Pozíció:" HorizontalAlignment="Left" Margin="550,92,0,0" VerticalAlignment="Top" Width="56"/>
-        <TextBox x:Name="pozTB" HorizontalAlignment="Left" Height="41" Margin="550,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="47" IsEnabled="False"/>
+        <TextBox x:Name="pozTB" HorizontalAlignment="Left" Height="26" Margin="550,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" IsEnabled="False"/>
         <Label Content="Lehetséges lépések helye:" HorizontalAlignment="Left" Margin="611,91,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="lepesekSzamaTB" HorizontalAlignment="Left" Height="41" Margin="611,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" IsEnabled="False"/>
         <Image x:Name="figura" HorizontalAlignment="Left" Height="30" Margin="611,344,0,0" VerticalAlignment="Top" Width="30"/>
         <Grid x:Name="tabla" HorizontalAlignment="Left" Height="400" Margin="96,112,0,0" VerticalAlignment="Top" Width="396"/>
+        <ComboBox x:Name="lepesekSzamaCB" HorizontalAlignment="Left" Margin="611,123,0,0" VerticalAlignment="Top" Width="146"/>
     </Grid>
 </Window>

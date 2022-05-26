@@ -72,6 +72,7 @@ namespace Sakklepesek_ErdélyiPéter
             Button aktualis = sender as Button;
             int x = HolVan(aktualis)[0];
             int y = HolVan(aktualis)[1];
+            pozTB.Text = $"({y+1};{8 - x})";
             if (sakkBabu == "feherKiraly")
             {
                 if ((x - 1) >= 0 && y >= 0)
@@ -79,6 +80,7 @@ namespace Sakklepesek_ErdélyiPéter
                     if (mezok[x - 1, y].Background != Brushes.Red)
                     {
                         mezok[x - 1, y].Background = Brushes.Red;
+                        lepesekSzamaCB.Items.Add($"({y + 1};{(x + 1)})");
                     }
                 }
                 if ((x + 1) < 8 && y >= 0)
@@ -131,6 +133,24 @@ namespace Sakklepesek_ErdélyiPéter
                     }
                 }
             }
+            if (sakkBabu == "feketeGyalog")
+            {
+                if ((x - 1) >= 0 && y >= 0)
+                {
+                    if (mezok[x - 1, y].Background != Brushes.Red)
+                    {
+                        mezok[x - 1, y].Background = Brushes.Red;
+                    }
+                }
+                if ((x - 2) >= 0 && y >= 0)
+                {
+                    if (mezok[x - 2, y].Background != Brushes.Red)
+                    {
+                            mezok[x - 2, y].Background = Brushes.Red;
+                    }
+                }
+                
+            }
         }
 
         private void feherGyalogBT_Click(object sender, RoutedEventArgs e)
@@ -148,26 +168,31 @@ namespace Sakklepesek_ErdélyiPéter
         private void feherKiralynoBT_Click(object sender, RoutedEventArgs e)
         {
             figura.Source = new BitmapImage(new Uri("D:/GitHubP4/Sakklepesek_ErdélyiPéter/feherkiralyno.png"));
+            sakkBabu = "feherKiralyno";
         }
 
         private void feherBastyaBT_Click(object sender, RoutedEventArgs e)
         {
             figura.Source = new BitmapImage(new Uri("D:/GitHubP4/Sakklepesek_ErdélyiPéter/feherbastya.png"));
+            sakkBabu = "feherBastya";
         }
 
         private void feherFutoBT_Click(object sender, RoutedEventArgs e)
         {
             figura.Source = new BitmapImage(new Uri("D:/GitHubP4/Sakklepesek_ErdélyiPéter/feherfuto.png"));
+            sakkBabu = "feherFuto";
         }
 
         private void feherLoBT_Click(object sender, RoutedEventArgs e)
         {
             figura.Source = new BitmapImage(new Uri("D:/GitHubP4/Sakklepesek_ErdélyiPéter/feherlo.png"));
+            sakkBabu = "feherLo";
         }
 
         private void feketeGyalogBT_Click(object sender, RoutedEventArgs e)
         {
             figura.Source = new BitmapImage(new Uri("D:/GitHubP4/Sakklepesek_ErdélyiPéter/feketegyalog.png"));
+            sakkBabu = "feketeGyalog";
         }
 
     }
