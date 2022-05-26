@@ -20,6 +20,8 @@ namespace Sakklepesek_ErdélyiPéter
     /// </summary>
     public partial class MainWindow : Window
     {
+        Button[,] mezok;
+        string sakkBabu = "";
         public MainWindow()
         {
             InitializeComponent();
@@ -30,27 +32,102 @@ namespace Sakklepesek_ErdélyiPéter
         {
             for (int i = 0; i < 8; i++)
             {
+                tabla.RowDefinitions.Add(new RowDefinition());
+                tabla.ColumnDefinitions.Add(new ColumnDefinition());
+            }
+            mezok = new Button[8, 8];
+            tabla.Children.Clear();
+            for (int i = 0; i < 8; i++)
+            {
                 for (int j = 0; j < 8; j++)
                 {
-                    Button gomb = new Button();
-                    gomb.Height = 50;
-                    gomb.Width = 50;
-                    gomb.Margin = new Thickness(50 * j, 50 * i, 0, 0);
-                    hatter.Children.Add(gomb);
-                    if (j % 2 != 0 && i % 2 == 0)
+                    mezok[i, j] = new Button();
+                    mezok[i, j].Click += SakkLepesek;
+                    tabla.Children.Add(mezok[i, j]);
+                    Grid.SetRow(mezok[i, j], i);
+                    Grid.SetColumn(mezok[i, j], j);
+                }
+            }
+        }
+        int[] HolVan(Button gomb)
+        {
+            int[] indexek = { -1, -1 };
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    if (mezok[i, j].Equals(gomb))
                     {
-                        gomb.Background = Brushes.Black;
+                        indexek[0] = i;
+                        indexek[1] = j;
+                        return indexek;
+
                     }
-                    else
+                }
+            }
+            return indexek;
+        }
+        private void SakkLepesek(object sender, RoutedEventArgs e)
+        {
+            Button aktualis = sender as Button;
+            int x = HolVan(aktualis)[0];
+            int y = HolVan(aktualis)[1];
+            if (sakkBabu == "feherKiraly")
+            {
+                if ((x - 1) >= 0 && y >= 0)
+                {
+                    if (mezok[x - 1, y].Background != Brushes.Red)
                     {
-                        if (j % 2 == 0 && i % 2 != 0)
-                        {
-                            gomb.Background = Brushes.Black;
-                        }
-                        else
-                        {
-                            gomb.Background = Brushes.White;
-                        }
+                        mezok[x - 1, y].Background = Brushes.Red;
+                    }
+                }
+                if ((x + 1) < 8 && y >= 0)
+                {
+                    if (mezok[x + 1, y].Background != Brushes.Red)
+                    {
+                        mezok[x + 1, y].Background = Brushes.Red;
+                    }
+                }
+                if (x >= 0 && (y-1) >= 0)
+                {
+                    if (mezok[x , y-1].Background != Brushes.Red)
+                    {
+                        mezok[x , y-1].Background = Brushes.Red;
+                    }
+                }
+                if (x >= 0 && x < 8 && (y + 1) > 0 && (y + 1) < 8)
+                {
+                    if (mezok[x , y+1].Background != Brushes.Red)
+                    {
+                        mezok[x , y+1].Background = Brushes.Red;
+                    }
+                }
+                if ((x-1) >= 0 && (y - 1) >= 0)
+                {
+                    if (mezok[x - 1, y-1].Background != Brushes.Red)
+                    {
+                        mezok[x - 1, y-1].Background = Brushes.Red;
+                    }
+                }
+                if ((x + 1) > 0 && (x + 1) < 8 && (y + 1) < 8 && (y + 1) > 0)
+                {
+                    if (mezok[x + 1, y+1].Background != Brushes.Red)
+                    {
+                        mezok[x + 1, y+1].Background = Brushes.Red;
+                    }
+                }
+                if ((x - 1) > 0 && (x - 1) < 8 && (y + 1) > 0 && (y + 1) < 8)
+                {
+                    if (mezok[x - 1, y+1].Background != Brushes.Red)
+                    {
+                        mezok[x - 1, y+1].Background = Brushes.Red;
+                    }
+                }
+                if ((x + 1) > 0 && (x + 1) < 8 && (y - 1) > 0 && (y - 1) < 8)
+                {
+                    if (mezok[x + 1, y-1].Background != Brushes.Red)
+                    {
+                        mezok[x + 1, y-1].Background = Brushes.Red;
                     }
                 }
             }
@@ -59,11 +136,13 @@ namespace Sakklepesek_ErdélyiPéter
         private void feherGyalogBT_Click(object sender, RoutedEventArgs e)
         {
             figura.Source = new BitmapImage(new Uri("D:/GitHubP4/Sakklepesek_ErdélyiPéter/fehergyalog.png"));
+            sakkBabu = "feherGyalog";
         }
 
         private void feherKiralyBT_Click(object sender, RoutedEventArgs e)
         {
             figura.Source = new BitmapImage(new Uri("D:/GitHubP4/Sakklepesek_ErdélyiPéter/feherkiraly.png"));
+            sakkBabu = "feherKiraly";
         }
 
         private void feherKiralynoBT_Click(object sender, RoutedEventArgs e)
@@ -90,5 +169,6 @@ namespace Sakklepesek_ErdélyiPéter
         {
             figura.Source = new BitmapImage(new Uri("D:/GitHubP4/Sakklepesek_ErdélyiPéter/feketegyalog.png"));
         }
+
     }
 }

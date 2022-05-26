@@ -28,7 +28,7 @@
         <Button x:Name="feketeGyalogBT" Canvas.Left="24" Canvas.Top="52" Margin="663,10,10,519" Click="feketeGyalogBT_Click">
             <TextBlock x:Name="feketeGyalog" FontFamily="pack://application:,,,/Y_Yoga;Component/Resources/#FontAwesome" Width="90">Fekete gyalog &#x265F;</TextBlock>
         </Button>
-        <Canvas x:Name="hatter" HorizontalAlignment="Left" Height="400" Margin="91,107,0,0" VerticalAlignment="Top" Width="396"/>
+
         <Label Content="1" HorizontalAlignment="Left" Margin="70,466,0,0" VerticalAlignment="Top"/>
         <Label Content="2" HorizontalAlignment="Left" Margin="70,416,0,0" VerticalAlignment="Top"/>
         <Label Content="3" HorizontalAlignment="Left" Margin="70,368,0,0" VerticalAlignment="Top"/>
@@ -66,5 +66,6 @@
         <Label Content="Lehetséges lépések helye:" HorizontalAlignment="Left" Margin="611,91,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="lepesekSzamaTB" HorizontalAlignment="Left" Height="41" Margin="611,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" IsEnabled="False"/>
         <Image x:Name="figura" HorizontalAlignment="Left" Height="30" Margin="611,344,0,0" VerticalAlignment="Top" Width="30"/>
+        <Grid x:Name="tabla" HorizontalAlignment="Left" Height="400" Margin="96,112,0,0" VerticalAlignment="Top" Width="396"/>
     </Grid>
 </Window>
