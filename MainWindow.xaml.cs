@@ -153,7 +153,7 @@ namespace Sakklepesek_ErdélyiPéter
                     }
                 }
             }
-            if (sakkBabu == "feketeGyalog")
+            if (sakkBabu == "feherGyalog")
             {
                 if ((x - 1) >= 0 && y >= 0)
                 {
@@ -163,6 +163,36 @@ namespace Sakklepesek_ErdélyiPéter
                     }
                 }
                 
+            }
+            if (sakkBabu == "feketeGyalog")
+            {
+                if ((x  +1) >= 0 && y >= 0)
+                {
+                    if (mezok[x  +1, y].Background != Brushes.Red)
+                    {
+                        mezok[x  +1, y].Background = Brushes.Red;
+                    }
+                }
+
+            }
+            if (sakkBabu == "feherLo")
+            {
+                if (mezok[x - 2, y -1].Background != Brushes.Red)
+                {
+                    mezok[x -2, y-1].Background = Brushes.Red;
+                }
+                if (mezok[x + 2, y +1].Background != Brushes.Red)
+                {
+                    mezok[x + 2, y + 1].Background = Brushes.Red;
+                }
+                if (mezok[x + 2, y - 1].Background != Brushes.Red)
+                {
+                    mezok[x + 2, y - 1].Background = Brushes.Red;
+                }
+                if (mezok[x - 2, y + 1].Background != Brushes.Red)
+                {
+                    mezok[x - 2, y + 1].Background = Brushes.Red;
+                }
             }
         }
 
