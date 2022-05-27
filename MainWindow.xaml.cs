@@ -46,6 +46,21 @@ namespace Sakklepesek_ErdélyiPéter
                     tabla.Children.Add(mezok[i, j]);
                     Grid.SetRow(mezok[i, j], i);
                     Grid.SetColumn(mezok[i, j], j);
+                    if (i % 2 == 0 && j % 2 != 0)
+                    {
+                        mezok[i, j].Background = Brushes.Black;
+                    }
+                    else
+                    {
+                        if (i % 2 != 0 && j % 2 == 0)
+                        {
+                            mezok[i, j].Background = Brushes.Black;
+                        }
+                        else
+                        {
+                            mezok[i, j].Background = Brushes.White;
+                        }
+                    }
                 }
             }
         }
@@ -80,7 +95,7 @@ namespace Sakklepesek_ErdélyiPéter
                     if (mezok[x - 1, y].Background != Brushes.Red)
                     {
                         mezok[x - 1, y].Background = Brushes.Red;
-                        lepesekSzamaCB.Items.Add($"({y + 1};{(x + 1)})");
+                        lepesekSzamaCB.Items.Add($"({y};{(8 - x)})");
                     }
                 }
                 if ((x + 1) < 8 && y >= 0)
