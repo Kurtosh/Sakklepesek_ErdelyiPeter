@@ -61,6 +61,11 @@ namespace Sakklepesek_ErdélyiPéter
                             mezok[i, j].Background = Brushes.White;
                         }
                     }
+                    if (i == 4 && j == 4)
+                    {
+                        mezok[i, j].Background = Brushes.Green;
+                    }
+
                 }
             }
         }
@@ -157,13 +162,6 @@ namespace Sakklepesek_ErdélyiPéter
                         mezok[x - 1, y].Background = Brushes.Red;
                     }
                 }
-                if ((x - 2) >= 0 && y >= 0)
-                {
-                    if (mezok[x - 2, y].Background != Brushes.Red)
-                    {
-                            mezok[x - 2, y].Background = Brushes.Red;
-                    }
-                }
                 
             }
         }
@@ -172,42 +170,217 @@ namespace Sakklepesek_ErdélyiPéter
         {
             figura.Source = new BitmapImage(new Uri("D:/GitHubP4/Sakklepesek_ErdélyiPéter/fehergyalog.png"));
             sakkBabu = "feherGyalog";
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    if (i % 2 == 0 && j % 2 != 0)
+                    {
+                        mezok[i, j].Background = Brushes.Black;
+                    }
+                    else
+                    {
+                        if (i % 2 != 0 && j % 2 == 0)
+                        {
+                            mezok[i, j].Background = Brushes.Black;
+                        }
+                        else
+                        {
+                            mezok[i, j].Background = Brushes.White;
+                        }
+                    }
+                    if (i == 4 && j == 4)
+                    {
+                        mezok[i, j].Background = Brushes.Green;
+                    }
+                }
+            }
         }
 
         private void feherKiralyBT_Click(object sender, RoutedEventArgs e)
         {
             figura.Source = new BitmapImage(new Uri("D:/GitHubP4/Sakklepesek_ErdélyiPéter/feherkiraly.png"));
             sakkBabu = "feherKiraly";
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    if (i % 2 == 0 && j % 2 != 0)
+                    {
+                        mezok[i, j].Background = Brushes.Black;
+                    }
+                    else
+                    {
+                        if (i % 2 != 0 && j % 2 == 0)
+                        {
+                            mezok[i, j].Background = Brushes.Black;
+                        }
+                        else
+                        {
+                            mezok[i, j].Background = Brushes.White;
+                        }
+                    }
+                    if (i == 4 && j == 4)
+                    {
+                        mezok[i, j].Background = Brushes.Green;
+                    }
+                }
+            }
         }
 
         private void feherKiralynoBT_Click(object sender, RoutedEventArgs e)
         {
             figura.Source = new BitmapImage(new Uri("D:/GitHubP4/Sakklepesek_ErdélyiPéter/feherkiralyno.png"));
             sakkBabu = "feherKiralyno";
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    if (i % 2 == 0 && j % 2 != 0)
+                    {
+                        mezok[i, j].Background = Brushes.Black;
+                    }
+                    else
+                    {
+                        if (i % 2 != 0 && j % 2 == 0)
+                        {
+                            mezok[i, j].Background = Brushes.Black;
+                        }
+                        else
+                        {
+                            mezok[i, j].Background = Brushes.White;
+                        }
+                    }
+                    if (i == 4 && j == 4)
+                    {
+                        mezok[i, j].Background = Brushes.Green;
+                    }
+                }
+            }
         }
 
         private void feherBastyaBT_Click(object sender, RoutedEventArgs e)
         {
             figura.Source = new BitmapImage(new Uri("D:/GitHubP4/Sakklepesek_ErdélyiPéter/feherbastya.png"));
             sakkBabu = "feherBastya";
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    if (i % 2 == 0 && j % 2 != 0)
+                    {
+                        mezok[i, j].Background = Brushes.Black;
+                    }
+                    else
+                    {
+                        if (i % 2 != 0 && j % 2 == 0)
+                        {
+                            mezok[i, j].Background = Brushes.Black;
+                        }
+                        else
+                        {
+                            mezok[i, j].Background = Brushes.White;
+                        }
+                    }
+                    if (i == 4 && j == 4)
+                    {
+                        mezok[i, j].Background = Brushes.Green;
+                    }
+                }
+            }
         }
 
         private void feherFutoBT_Click(object sender, RoutedEventArgs e)
         {
             figura.Source = new BitmapImage(new Uri("D:/GitHubP4/Sakklepesek_ErdélyiPéter/feherfuto.png"));
             sakkBabu = "feherFuto";
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    if (i % 2 == 0 && j % 2 != 0)
+                    {
+                        mezok[i, j].Background = Brushes.Black;
+                    }
+                    else
+                    {
+                        if (i % 2 != 0 && j % 2 == 0)
+                        {
+                            mezok[i, j].Background = Brushes.Black;
+                        }
+                        else
+                        {
+                            mezok[i, j].Background = Brushes.White;
+                        }
+                    }
+                    if (i == 4 && j == 4)
+                    {
+                        mezok[i, j].Background = Brushes.Green;
+                    }
+                }
+            }
         }
 
         private void feherLoBT_Click(object sender, RoutedEventArgs e)
         {
             figura.Source = new BitmapImage(new Uri("D:/GitHubP4/Sakklepesek_ErdélyiPéter/feherlo.png"));
             sakkBabu = "feherLo";
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    if (i % 2 == 0 && j % 2 != 0)
+                    {
+                        mezok[i, j].Background = Brushes.Black;
+                    }
+                    else
+                    {
+                        if (i % 2 != 0 && j % 2 == 0)
+                        {
+                            mezok[i, j].Background = Brushes.Black;
+                        }
+                        else
+                        {
+                            mezok[i, j].Background = Brushes.White;
+                        }
+                    }
+                    if (i == 4 && j == 4)
+                    {
+                        mezok[i, j].Background = Brushes.Green;
+                    }
+                }
+            }
         }
 
         private void feketeGyalogBT_Click(object sender, RoutedEventArgs e)
         {
             figura.Source = new BitmapImage(new Uri("D:/GitHubP4/Sakklepesek_ErdélyiPéter/feketegyalog.png"));
             sakkBabu = "feketeGyalog";
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    if (i % 2 == 0 && j % 2 != 0)
+                    {
+                        mezok[i, j].Background = Brushes.Black;
+                    }
+                    else
+                    {
+                        if (i % 2 != 0 && j % 2 == 0)
+                        {
+                            mezok[i, j].Background = Brushes.Black;
+                        }
+                        else
+                        {
+                            mezok[i, j].Background = Brushes.White;
+                        }
+                    }
+                    if (i == 4 && j == 4)
+                    {
+                        mezok[i, j].Background = Brushes.Green;
+                    }
+                }
+            }
         }
 
     }
