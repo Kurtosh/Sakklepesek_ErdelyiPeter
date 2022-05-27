@@ -124,32 +124,32 @@ namespace Sakklepesek_ErdélyiPéter
                         mezok[x , y+1].Background = Brushes.Red;
                     }
                 }
-                if ((x-1) >= 0 && (y - 1) >= 0)
+                if ((x - 1) >= 0 && (y - 1) >= 0)
                 {
-                    if (mezok[x - 1, y-1].Background != Brushes.Red)
+                    if (mezok[x - 1, y - 1].Background != Brushes.Red)
                     {
-                        mezok[x - 1, y-1].Background = Brushes.Red;
+                        mezok[x - 1, y - 1].Background = Brushes.Red;
                     }
                 }
                 if ((x + 1) > 0 && (x + 1) < 8 && (y + 1) < 8 && (y + 1) > 0)
                 {
-                    if (mezok[x + 1, y+1].Background != Brushes.Red)
+                    if (mezok[x + 1, y + 1].Background != Brushes.Red)
                     {
-                        mezok[x + 1, y+1].Background = Brushes.Red;
+                        mezok[x + 1, y + 1].Background = Brushes.Red;
                     }
                 }
                 if ((x - 1) > 0 && (x - 1) < 8 && (y + 1) > 0 && (y + 1) < 8)
                 {
-                    if (mezok[x - 1, y+1].Background != Brushes.Red)
+                    if (mezok[x - 1, y + 1].Background != Brushes.Red)
                     {
-                        mezok[x - 1, y+1].Background = Brushes.Red;
+                        mezok[x - 1, y + 1].Background = Brushes.Red;
                     }
                 }
                 if ((x + 1) > 0 && (x + 1) < 8 && (y - 1) > 0 && (y - 1) < 8)
                 {
-                    if (mezok[x + 1, y-1].Background != Brushes.Red)
+                    if (mezok[x + 1, y - 1].Background != Brushes.Red)
                     {
-                        mezok[x + 1, y-1].Background = Brushes.Red;
+                        mezok[x + 1, y - 1].Background = Brushes.Red;
                     }
                 }
             }
@@ -218,6 +218,163 @@ namespace Sakklepesek_ErdélyiPéter
                     {
                         mezok[i, y].Background = Brushes.Green;
                     }
+                }
+            }
+            if (sakkBabu == "feherFuto")
+            {
+                if ((x - 1) >= 0 && (y - 1) >= 0)
+                {
+                    if (mezok[x - 1, y - 1].Background != Brushes.Red)
+                    {
+                        mezok[x - 1, y - 1].Background = Brushes.Red;
+                    }
+                }
+                if ((x + 1) > 0 && (x + 1) < 8 && (y + 1) < 8 && (y + 1) > 0)
+                {
+                    if (mezok[x + 1, y + 1].Background != Brushes.Red)
+                    {
+                        mezok[x + 1, y + 1].Background = Brushes.Red;
+                    }
+                }
+                if ((x - 1) > 0 && (x - 1) < 8 && (y + 1) > 0 && (y + 1) < 8)
+                {
+                    if (mezok[x - 1, y + 1].Background != Brushes.Red)
+                    {
+                        mezok[x - 1, y + 1].Background = Brushes.Red;
+                    }
+                }
+                if ((x + 1) > 0 && (x + 1) < 8 && (y - 1) > 0 && (y - 1) < 8)
+                {
+                    if (mezok[x + 1, y - 1].Background != Brushes.Red)
+                    {
+                        mezok[x + 1, y - 1].Background = Brushes.Red;
+                    }
+                }
+                if (mezok[x + 2, y - 2].Background != Brushes.Red)
+                {
+                    mezok[x + 2, y - 2].Background = Brushes.Red;
+                }
+                if (mezok[x + 3, y - 3].Background != Brushes.Red)
+                {
+                    mezok[x + 3, y - 3].Background = Brushes.Red;
+                }
+                if (mezok[x + 2, y + 2].Background != Brushes.Red)
+                {
+                    mezok[x + 2, y + 2].Background = Brushes.Red;
+                }
+                if (mezok[x + 3, y + 3].Background != Brushes.Red)
+                {
+                    mezok[x + 3, y + 3].Background = Brushes.Red;
+                }
+                if (mezok[x - 2, y + 2].Background != Brushes.Red)
+                {
+                    mezok[x - 2, y + 2].Background = Brushes.Red;
+                }
+                if (mezok[x - 3, y + 3].Background != Brushes.Red)
+                {
+                    mezok[x - 3, y + 3].Background = Brushes.Red;
+                }
+                if (mezok[x - 2, y - 2].Background != Brushes.Red)
+                {
+                    mezok[x - 2, y - 2].Background = Brushes.Red;
+                }
+                if (mezok[x - 3, y - 3].Background != Brushes.Red)
+                {
+                    mezok[x - 3, y - 3].Background = Brushes.Red;
+                }
+                if (mezok[x - 4, y - 4].Background != Brushes.Red)
+                {
+                    mezok[x - 4, y - 4].Background = Brushes.Red;
+                }
+            }
+            if (sakkBabu == "feherKiralyno")
+            {
+                for (int i = 0; i < 8; i++)
+                {
+
+                    if (mezok[i, y].Background != Brushes.Red)
+                    {
+                        mezok[i, y].Background = Brushes.Red;
+                    }
+                    if (i == 4 && y == 4)
+                    {
+                        mezok[i, y].Background = Brushes.Green;
+                    }
+                }
+                for (int i = 0; i < 8; i++)
+                {
+                    if (mezok[x, i].Background != Brushes.Red)
+                    {
+                        mezok[x, i].Background = Brushes.Red;
+                    }
+                    if (i == 4 && y == 4)
+                    {
+                        mezok[i, y].Background = Brushes.Green;
+                    }
+                }
+                if ((x - 1) >= 0 && (y - 1) >= 0)
+                {
+                    if (mezok[x - 1, y - 1].Background != Brushes.Red)
+                    {
+                        mezok[x - 1, y - 1].Background = Brushes.Red;
+                    }
+                }
+                if ((x + 1) > 0 && (x + 1) < 8 && (y + 1) < 8 && (y + 1) > 0)
+                {
+                    if (mezok[x + 1, y + 1].Background != Brushes.Red)
+                    {
+                        mezok[x + 1, y + 1].Background = Brushes.Red;
+                    }
+                }
+                if ((x - 1) > 0 && (x - 1) < 8 && (y + 1) > 0 && (y + 1) < 8)
+                {
+                    if (mezok[x - 1, y + 1].Background != Brushes.Red)
+                    {
+                        mezok[x - 1, y + 1].Background = Brushes.Red;
+                    }
+                }
+                if ((x + 1) > 0 && (x + 1) < 8 && (y - 1) > 0 && (y - 1) < 8)
+                {
+                    if (mezok[x + 1, y - 1].Background != Brushes.Red)
+                    {
+                        mezok[x + 1, y - 1].Background = Brushes.Red;
+                    }
+                }
+                if (mezok[x + 2, y - 2].Background != Brushes.Red)
+                {
+                    mezok[x + 2, y - 2].Background = Brushes.Red;
+                }
+                if (mezok[x + 3, y - 3].Background != Brushes.Red)
+                {
+                    mezok[x + 3, y - 3].Background = Brushes.Red;
+                }
+                if (mezok[x + 2, y + 2].Background != Brushes.Red)
+                {
+                    mezok[x + 2, y + 2].Background = Brushes.Red;
+                }
+                if (mezok[x + 3, y + 3].Background != Brushes.Red)
+                {
+                    mezok[x + 3, y + 3].Background = Brushes.Red;
+                }
+                if (mezok[x - 2, y + 2].Background != Brushes.Red)
+                {
+                    mezok[x - 2, y + 2].Background = Brushes.Red;
+                }
+                if (mezok[x - 3, y + 3].Background != Brushes.Red)
+                {
+                    mezok[x - 3, y + 3].Background = Brushes.Red;
+                }
+                if (mezok[x - 2, y - 2].Background != Brushes.Red)
+                {
+                    mezok[x - 2, y - 2].Background = Brushes.Red;
+                }
+                if (mezok[x - 3, y - 3].Background != Brushes.Red)
+                {
+                    mezok[x - 3, y - 3].Background = Brushes.Red;
+                }
+                if (mezok[x - 4, y - 4].Background != Brushes.Red)
+                {
+                    mezok[x - 4, y - 4].Background = Brushes.Red;
                 }
             }
         }
