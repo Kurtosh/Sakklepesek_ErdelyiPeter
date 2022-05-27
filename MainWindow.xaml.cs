@@ -194,6 +194,32 @@ namespace Sakklepesek_ErdélyiPéter
                     mezok[x - 2, y + 1].Background = Brushes.Red;
                 }
             }
+            if (sakkBabu == "feherBastya")
+            {
+                for (int i = 0; i < 8; i++)
+                {
+
+                    if (mezok[i, y].Background != Brushes.Red)
+                    {
+                        mezok[i, y].Background = Brushes.Red;
+                    }
+                    if (i == 4 && y == 4)
+                    {
+                        mezok[i, y].Background = Brushes.Green;
+                    }     
+                }
+                for (int i = 0; i < 8; i++)
+                {
+                    if (mezok[x, i].Background != Brushes.Red)
+                    {
+                        mezok[x, i].Background = Brushes.Red;
+                    }
+                    if (i == 4 && y == 4)
+                    {
+                        mezok[i, y].Background = Brushes.Green;
+                    }
+                }
+            }
         }
 
         private void feherGyalogBT_Click(object sender, RoutedEventArgs e)
