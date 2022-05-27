@@ -26,6 +26,7 @@ namespace Sakklepesek_ErdélyiPéter
         {
             InitializeComponent();
             GombokGeneralasa();
+            MessageBox.Show("A sakkfigurát ajánlott a zöld mezőre elhelyezni, mivel többnyire ott működik.");
         }
 
         private void GombokGeneralasa()
@@ -92,7 +93,7 @@ namespace Sakklepesek_ErdélyiPéter
             Button aktualis = sender as Button;
             int x = HolVan(aktualis)[0];
             int y = HolVan(aktualis)[1];
-            pozTB.Text = $"({y+1};{8 - x})";
+            pozTB.Text = $"({y+1};{x+1})";
             if (sakkBabu == "feherKiraly")
             {
                 if ((x - 1) >= 0 && y >= 0)
@@ -100,7 +101,7 @@ namespace Sakklepesek_ErdélyiPéter
                     if (mezok[x - 1, y].Background != Brushes.Red)
                     {
                         mezok[x - 1, y].Background = Brushes.Red;
-                        lepesekSzamaCB.Items.Add($"({y};{(8 - x)})");
+                        lepesekSzamaCB.Items.Add($"({y + 1};{(x)})");
                     }
                 }
                 if ((x + 1) < 8 && y >= 0)
@@ -108,6 +109,7 @@ namespace Sakklepesek_ErdélyiPéter
                     if (mezok[x + 1, y].Background != Brushes.Red)
                     {
                         mezok[x + 1, y].Background = Brushes.Red;
+                        lepesekSzamaCB.Items.Add($"({y + 1};{(x + 2)})");
                     }
                 }
                 if (x >= 0 && (y-1) >= 0)
@@ -115,6 +117,7 @@ namespace Sakklepesek_ErdélyiPéter
                     if (mezok[x , y-1].Background != Brushes.Red)
                     {
                         mezok[x , y-1].Background = Brushes.Red;
+                        lepesekSzamaCB.Items.Add($"({y };{(x + 1)})");
                     }
                 }
                 if (x >= 0 && x < 8 && (y + 1) > 0 && (y + 1) < 8)
@@ -122,6 +125,7 @@ namespace Sakklepesek_ErdélyiPéter
                     if (mezok[x , y+1].Background != Brushes.Red)
                     {
                         mezok[x , y+1].Background = Brushes.Red;
+                        lepesekSzamaCB.Items.Add($"({y + 2};{(x + 1)})");
                     }
                 }
                 if ((x - 1) >= 0 && (y - 1) >= 0)
@@ -129,6 +133,7 @@ namespace Sakklepesek_ErdélyiPéter
                     if (mezok[x - 1, y - 1].Background != Brushes.Red)
                     {
                         mezok[x - 1, y - 1].Background = Brushes.Red;
+                        lepesekSzamaCB.Items.Add($"({y};{(x)})");
                     }
                 }
                 if ((x + 1) > 0 && (x + 1) < 8 && (y + 1) < 8 && (y + 1) > 0)
@@ -136,6 +141,7 @@ namespace Sakklepesek_ErdélyiPéter
                     if (mezok[x + 1, y + 1].Background != Brushes.Red)
                     {
                         mezok[x + 1, y + 1].Background = Brushes.Red;
+                        lepesekSzamaCB.Items.Add($"({y + 2};{(x + 2)})");
                     }
                 }
                 if ((x - 1) > 0 && (x - 1) < 8 && (y + 1) > 0 && (y + 1) < 8)
@@ -143,6 +149,7 @@ namespace Sakklepesek_ErdélyiPéter
                     if (mezok[x - 1, y + 1].Background != Brushes.Red)
                     {
                         mezok[x - 1, y + 1].Background = Brushes.Red;
+                        lepesekSzamaCB.Items.Add($"({y + 2};{(x)})");
                     }
                 }
                 if ((x + 1) > 0 && (x + 1) < 8 && (y - 1) > 0 && (y - 1) < 8)
@@ -150,6 +157,7 @@ namespace Sakklepesek_ErdélyiPéter
                     if (mezok[x + 1, y - 1].Background != Brushes.Red)
                     {
                         mezok[x + 1, y - 1].Background = Brushes.Red;
+                        lepesekSzamaCB.Items.Add($"({y };{(x + 2)})");
                     }
                 }
             }
@@ -160,6 +168,7 @@ namespace Sakklepesek_ErdélyiPéter
                     if (mezok[x - 1, y].Background != Brushes.Red)
                     {
                         mezok[x - 1, y].Background = Brushes.Red;
+                        lepesekSzamaCB.Items.Add($"({y + 1};{(x)})");
                     }
                 }
                 
@@ -171,6 +180,7 @@ namespace Sakklepesek_ErdélyiPéter
                     if (mezok[x  +1, y].Background != Brushes.Red)
                     {
                         mezok[x  +1, y].Background = Brushes.Red;
+                        lepesekSzamaCB.Items.Add($"({y + 1};{(x + 2)})");
                     }
                 }
 
@@ -180,18 +190,38 @@ namespace Sakklepesek_ErdélyiPéter
                 if (mezok[x - 2, y -1].Background != Brushes.Red)
                 {
                     mezok[x -2, y-1].Background = Brushes.Red;
+                    lepesekSzamaCB.Items.Add($"({y};{(x - 1)})");
                 }
                 if (mezok[x + 2, y +1].Background != Brushes.Red)
                 {
                     mezok[x + 2, y + 1].Background = Brushes.Red;
+                    lepesekSzamaCB.Items.Add($"({y + 2};{(x + 3)})");
                 }
                 if (mezok[x + 2, y - 1].Background != Brushes.Red)
                 {
                     mezok[x + 2, y - 1].Background = Brushes.Red;
+                    lepesekSzamaCB.Items.Add($"({y};{(x + 3)})");
                 }
                 if (mezok[x - 2, y + 1].Background != Brushes.Red)
                 {
                     mezok[x - 2, y + 1].Background = Brushes.Red;
+                    lepesekSzamaCB.Items.Add($"({y + 2};{(x - 1)})");
+                }
+                if (mezok[x - 1, y + 2].Background != Brushes.Red)
+                {
+                    mezok[x - 1, y + 2].Background = Brushes.Red;
+                }
+                if (mezok[x + 1, y + 2].Background != Brushes.Red)
+                {
+                    mezok[x + 1, y + 2].Background = Brushes.Red;
+                }
+                if (mezok[x - 1, y - 2].Background != Brushes.Red)
+                {
+                    mezok[x - 1, y - 2].Background = Brushes.Red;
+                }
+                if (mezok[x + 1, y - 2].Background != Brushes.Red)
+                {
+                    mezok[x + 1, y - 2].Background = Brushes.Red;
                 }
             }
             if (sakkBabu == "feherBastya")
@@ -383,6 +413,7 @@ namespace Sakklepesek_ErdélyiPéter
         {
             figura.Source = new BitmapImage(new Uri("D:/GitHubP4/Sakklepesek_ErdélyiPéter/fehergyalog.png"));
             sakkBabu = "feherGyalog";
+            lepesekSzamaCB.Items.Clear();
             for (int i = 0; i < 8; i++)
             {
                 for (int j = 0; j < 8; j++)
@@ -414,6 +445,7 @@ namespace Sakklepesek_ErdélyiPéter
         {
             figura.Source = new BitmapImage(new Uri("D:/GitHubP4/Sakklepesek_ErdélyiPéter/feherkiraly.png"));
             sakkBabu = "feherKiraly";
+            lepesekSzamaCB.Items.Clear();
             for (int i = 0; i < 8; i++)
             {
                 for (int j = 0; j < 8; j++)
@@ -445,6 +477,7 @@ namespace Sakklepesek_ErdélyiPéter
         {
             figura.Source = new BitmapImage(new Uri("D:/GitHubP4/Sakklepesek_ErdélyiPéter/feherkiralyno.png"));
             sakkBabu = "feherKiralyno";
+            lepesekSzamaCB.Items.Clear();
             for (int i = 0; i < 8; i++)
             {
                 for (int j = 0; j < 8; j++)
@@ -476,6 +509,7 @@ namespace Sakklepesek_ErdélyiPéter
         {
             figura.Source = new BitmapImage(new Uri("D:/GitHubP4/Sakklepesek_ErdélyiPéter/feherbastya.png"));
             sakkBabu = "feherBastya";
+            lepesekSzamaCB.Items.Clear();
             for (int i = 0; i < 8; i++)
             {
                 for (int j = 0; j < 8; j++)
@@ -507,6 +541,7 @@ namespace Sakklepesek_ErdélyiPéter
         {
             figura.Source = new BitmapImage(new Uri("D:/GitHubP4/Sakklepesek_ErdélyiPéter/feherfuto.png"));
             sakkBabu = "feherFuto";
+            lepesekSzamaCB.Items.Clear();
             for (int i = 0; i < 8; i++)
             {
                 for (int j = 0; j < 8; j++)
@@ -538,6 +573,7 @@ namespace Sakklepesek_ErdélyiPéter
         {
             figura.Source = new BitmapImage(new Uri("D:/GitHubP4/Sakklepesek_ErdélyiPéter/feherlo.png"));
             sakkBabu = "feherLo";
+            lepesekSzamaCB.Items.Clear();
             for (int i = 0; i < 8; i++)
             {
                 for (int j = 0; j < 8; j++)
@@ -569,6 +605,7 @@ namespace Sakklepesek_ErdélyiPéter
         {
             figura.Source = new BitmapImage(new Uri("D:/GitHubP4/Sakklepesek_ErdélyiPéter/feketegyalog.png"));
             sakkBabu = "feketeGyalog";
+            lepesekSzamaCB.Items.Clear();
             for (int i = 0; i < 8; i++)
             {
                 for (int j = 0; j < 8; j++)
